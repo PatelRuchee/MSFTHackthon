@@ -1,0 +1,144 @@
+body{
+    width: 250px;
+    display: flex;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* height: 100vh; */
+    margin: 0;
+    } 
+
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+}
+
+.percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin-left: 17px;
+}
+.percent svg circle {
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+.percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #FBEBA8;
+}
+
+.percent svg circle:nth-child(2){
+    stroke-dashoffset: 152;
+    /* stroke-dashoffset: calc(440- (440 * 87) / 100); */
+    opacity: 10;
+    stroke: #E5CA55;
+}
+
+.percent .number{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+}
+
+.percent .number h2{
+    font-size: 48px;
+}
+
+.percent .number h2 span{
+    font-size: 24px;
+}
+
+.text{
+    padding: 10px 0 0;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 1px;;
+}
+
+button {
+background-color: #336dab;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+font-size: 16px;
+}
+
+.rank {
+    font-size: 18px;
+    text-align: center;
+    color: #B29726;
+    padding-right: 2px;
+}
+
+.title {
+text-align: center;
+margin-top: 10px;
+font-size: 20px;
+padding-bottom: 20px;
+}
+.progress{
+background-color: #d8d8d8;
+border-radius: 20px;
+height: 10px;
+width: 120px;
+margin-top: 5px;
+margin-bottom: 0px;
+margin-left: 15px;;
+}
+.progress-people{
+background-color: #E5CA55;
+height: 100%;
+width: 20px;
+border-radius: 20px;
+transition: 1s ease 0.3s;
+}
+.progress-planet{
+background-color: #E5CA55;
+height: 100%;
+width: 20px;
+border-radius: 20px;
+transition: 1s ease 0.3s;
+
+}
+.progress-animal{
+background-color: #E5CA55;
+height: 100%;
+width: 20px;
+border-radius: 20px;
+transition: 1s ease 0.3s;
+
+}
+.footer{
+    height: 20px;
+}
+
+.rating{
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+p{
+    margin-bottom: 0.3rem;
+}
+
+
